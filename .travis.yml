@@ -33,5 +33,6 @@ deploy:
   provider: script
   skip_cleanup: true
   script: electron-forge publish
+  api_key: $GITHUB_TOKEN
   on:
     tags: true
