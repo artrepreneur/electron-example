@@ -19,5 +19,9 @@ security find-identity -v
 
 security set-key-partition-list -S apple-tool:,apple: -s -k travis $KEY_CHAIN
 
+IDENTITY=security find-identity -v
+
+echo $IDENTITY
+
 # remove certs
 rm -fr *.p12
